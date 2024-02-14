@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 15px;  
+  gap: 15px;
 }
 
 .carta{
@@ -28,10 +28,7 @@
   padding: 20px;
   border-radius: 15px;
   cursor: pointer;
-}
 
-.carta.hover {
-  transform: rotateY(180deg);
 }
 
 .button {
@@ -42,7 +39,8 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  display: block; 
+  display: block;
+  
 } 
 
 body {
