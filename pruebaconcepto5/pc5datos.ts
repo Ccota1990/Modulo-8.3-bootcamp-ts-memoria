@@ -1,4 +1,4 @@
-import { InfoCarta } from "./modelo"
+import { InfoCarta } from "./pc5modelo"
 
 export const datosImagenes: InfoCarta [] =[
     {

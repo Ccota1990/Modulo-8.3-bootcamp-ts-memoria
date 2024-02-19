@@ -1,5 +1,5 @@
-import "/src/style.css";
-import { cartas } from "./datos"
+import "./pc5style.css";
+import { cartas } from "./pc5datos"
 
 
 const mapearDivCartas = (indiceCarta: number) : void => {
