@@ -1,5 +1,6 @@
 import "/src/style.css";
-import { cartas } from "./datos"
+import { cartas } from "./modelo"
+import { iniciarPartida } from "./motor";
 
 
 const mapearDivCartas = (indiceCarta: number) : void => {
@@ -15,14 +16,10 @@ const mapearDivCartas = (indiceCarta: number) : void => {
     }
 };
 
-const generarTablero = (): void => {
+export const generarTablero = (): void => {
     for (let indice = 0; indice < cartas.length; indice++){
         mapearDivCartas(indice);
     }
-};
-
-const iniciarPartida = (): void => {
-    generarTablero();
 };
 
 document.addEventListener("DOMContentLoaded", iniciarPartida);

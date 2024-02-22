@@ -24,8 +24,8 @@
 }
 
 .carta{
-  width: 128px;
-  height: 128px;
+  min-width: 148px;
+  min-height: 148px;
   background-color: #afe2ff;
   border-radius: 15px;
   padding: 1px;
@@ -38,6 +38,7 @@ img{
   border-radius: 15px;
   display: flex;
   align-items: center;
+  padding: 10px;
   
 }
 
