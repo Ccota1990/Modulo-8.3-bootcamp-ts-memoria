@@ -8,8 +8,8 @@ const mapearDivCartas = (indiceCarta: number) : void => {
     const elemento = document.querySelector(dataIndiceId);
 
     if (elemento) {
-        const srcImg = cartas[indiceCarta].imagen;
         elemento.addEventListener("click", () =>{
+            const srcImg = cartas[indiceCarta].imagen;
             elemento.getElementsByTagName("img")[0].src = srcImg;
             elemento.getElementsByTagName("img")[0].style.backgroundColor = "#bb9bff" ;
     });
@@ -22,4 +22,9 @@ export const generarTablero = (): void => {
     }
 };
 
-document.addEventListener("DOMContentLoaded", iniciarPartida);
+const boton = document.getElementById('empezar')
+if(boton){
+    boton.addEventListener("click", iniciarPartida);
+}
+document.addEventListener("DOMContentLoaded", generarTablero);
+
